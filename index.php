@@ -108,6 +108,42 @@
 
     print_r(kintamieji(2, 15, 5));
 
+    echo "<hr>";
+    echo "Funkcijos ND 9";
+    echo "<br>";
+
+    // Parašykite funkciją kuri priimtų tekstą kintamąjį ir į gražintų “apsuktą” pvz paduodate Naglis, gaunate silgaN.
+
+    function apsuktiTeksta($tekstas)
+    {
+        return strrev($tekstas);
+    }
+
+    print_r(apsuktiTeksta("Arnas"));
+
+
+    echo "<hr>";
+    echo "Funkcijos ND 1-1";
+    echo "<br>";
+
+    // Parašykite funkciją, kurios argumentas būtų tekstas, kuris yra įterpiamas į h1 tagą;
+
+    function argumentas($text)
+    {
+        return "<h1>" . $text . "</h1>";
+    }
+
+    print_r(argumentas("Kaip laikotės?"));
+
+    echo "<hr>";
+    echo "Funkcijos ND 1-2";
+    echo "<br>";
+
+    // Parašykite funkciją su dviem argumentais, pirmas argumentas tekstas, įterpiamas į h tagą, o antrasis tago numeris (1-6). Rašydami šią funkciją remkitės pirmame uždavinyje parašytą funkciją;
+
+    
+
+
     ?>
 
 
