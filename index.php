@@ -18,6 +18,19 @@
     }
 
     multiply(2, 5);
+
+    echo "<hr>";
+
+    echo "Funkcijos ND 2";
+    echo "<br>";
+
+    function Vardas($vard)
+    {
+        echo "Labas, $vard";
+    }
+
+    vardas('Linai');
+
     ?>
 
 
