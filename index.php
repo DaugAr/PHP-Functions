@@ -61,6 +61,19 @@
     echo "Funkcijos ND 5";
     echo "<br>";
 
+    // Parašykite funkciją kuri sugeneruotų 3 random skaičius nuo 0 iki 5 ir atvaizduotų naršyklėje vienoje eilutėje atskirtus kableliais. Po paskutinio skaičiaus kablelio neturi būti.
+
+    function skaiciai()
+    {
+        $numbers = array();
+        for ($i = 0; $i < 3; $i++) {
+            $numbers[] = rand(0, 5);
+        }
+        echo implode(",", $numbers);
+    }
+
+    skaiciai();
+
     ?>
 
 
