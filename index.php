@@ -91,6 +91,23 @@
 
     pTagai();
 
+    echo "<hr>";
+    echo "Funkcijos ND 8";
+    echo "<br>";
+
+    // Sukurkite funkciją kuri priimtų 3 kintamuosius $min, $max ir $length, sugeneruotų random masyvą $length ilgio, užpildytų random skaičiais $min $max intervale.
+
+    function kintamieji($min, $max, $length)
+    {
+        $arr = [];
+        for ($i = 0; $i < $length; $i++) {
+            $arr[] = rand($min, $max);
+        }
+        return $arr;
+    }
+
+    print_r(kintamieji(2, 15, 5));
+
     ?>
 
 
