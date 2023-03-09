@@ -74,6 +74,23 @@
 
     skaiciai();
 
+    echo "<hr>";
+    echo "Funkcijos ND 7";
+    echo "<br>";
+
+    // Parašykite funkciją kuri sugeneruotų 10 p tagų su skaičiais juose nuo 1 iki 10 ir atvaizduotų naršylkėje. Rezultate HTML’e turi matytis 10 p tagų su skaičiais. 
+
+    function pTagai()
+    {
+        $result = "";
+        for ($i = 1; $i <= 10; $i++) {
+            $result .= '<p>' . $i . '</p>';
+        }
+        echo $result;
+    }
+
+    pTagai();
+
     ?>
 
 
