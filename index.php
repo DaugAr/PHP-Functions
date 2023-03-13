@@ -123,7 +123,7 @@
 
 
     echo "<hr>";
-    echo "Funkcijos ND 1-1";
+    echo "Funkcijos ND 2-1";
     echo "<br>";
 
     // Parašykite funkciją, kurios argumentas būtų tekstas, kuris yra įterpiamas į h1 tagą;
@@ -136,12 +136,44 @@
     print_r(argumentas("Kaip laikotės?"));
 
     echo "<hr>";
-    echo "Funkcijos ND 1-2";
+    echo "Funkcijos ND 2-2";
     echo "<br>";
 
     // Parašykite funkciją su dviem argumentais, pirmas argumentas tekstas, įterpiamas į h tagą, o antrasis tago numeris (1-6). Rašydami šią funkciją remkitės pirmame uždavinyje parašytą funkciją;
 
-    
+    function argument($text, $numeris)
+    {
+        return "<h" . $numeris . ">" . $text . "</h1" . $numeris . ">";
+    }
+
+    print_r(argument("Kas geresnio?", 1));
+
+    echo "<hr>";
+    echo "Funkcijos ND 2-4";
+    echo "<br>";
+
+    // Parašykite funkciją, kuri skaičiuotų, iš kiek sveikų skaičių jos argumentas dalijasi be liekanos (išskyrus vienetą ir patį save) Argumentą užrašykite taip, kad būtų galima įvesti tik sveiką skaičių;
+
+    function dalikliai_be_liekanos($skaicius)
+    {
+        $dalikliai = 0;
+        for ($i = 2; $i < $skaicius; $i++) {
+            if ($skaicius % $i == 0) {
+                $dalikliai++;
+            }
+        }
+        return $dalikliai;
+    }
+
+    echo dalikliai_be_liekanos(15);
+
+
+    echo "<hr>";
+    echo "Funkcijos ND 2-5";
+    echo "<br>";
+
+    // Sugeneruokite masyvą iš 100 elementų, kurio reikšmės atsitiktiniai skaičiai nuo 33 iki 77. Išrūšiuokite masyvą pagal daliklių be liekanos kiekį mažėjimo tvarka, panaudodami ketvirto uždavinio funkciją.
+
 
 
     ?>
