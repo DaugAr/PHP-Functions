@@ -165,7 +165,7 @@
         return $dalikliai;
     }
 
-    echo dalikliai_be_liekanos(15);
+    echo dalikliai_be_liekanos(20);
 
 
     echo "<hr>";
@@ -174,7 +174,35 @@
 
     // Sugeneruokite masyvą iš 100 elementų, kurio reikšmės atsitiktiniai skaičiai nuo 33 iki 77. Išrūšiuokite masyvą pagal daliklių be liekanos kiekį mažėjimo tvarka, panaudodami ketvirto uždavinio funkciją.
 
+    print_r(sortSmt());
 
+    function sortSmt()
+    {
+        $arr = [];
+        for ($i = 0; $i < 100; $i++) {
+            $arr[] = rand(33, 77);
+        }
+
+        for ($i = 0; $i < count($arr); $i++) {
+            for ($a = 0; $a < count($arr); $a++) {
+                if (dalikliai_be_liekanos($arr[$i]) < dalikliai_be_liekanos($arr[$a])) {
+                    $temp = $arr[$i];
+                    $arr[$i] = $arr[$a];
+                    $arr[$a] = $temp;
+                }
+            }
+        }
+        return $arr;
+    }
+
+    echo "<hr>";
+    echo "Funkcijos ND 2-9";
+    echo "<br>";
+
+
+    // Sugeneruokite masyvą iš trijų elementų, kurie yra atsitiktiniai skaičiai nuo 1 iki 33. Jeigu tarp trijų paskutinių elementų yra nors vienas ne pirminis skaičius, prie masyvo pridėkite dar vieną elementą- atsitiktinį skaičių nuo 1 iki 33. Vėl patikrinkite pradinę sąlygą ir jeigu reikia pridėkite dar vieną elementą. Kartokite, kol sąlyga nereikalaus pridėti elemento. 
+
+    
 
     ?>
 
